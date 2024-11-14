@@ -11,8 +11,8 @@ with open(model_path, 'rb') as f:
 origins = [
     "http://localhost:5173",
     "localhost:5173",
-    "https://predict-reach-on-time.netlify.app",
-    "predict-reach-on-time.netlify.app"
+    "https://credit-risk-ensa.netlify.app/",
+    "credit-risk-ensa.netlify.app/"
 ]
 
 

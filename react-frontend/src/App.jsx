@@ -29,13 +29,16 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/predict", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(features),
-      });
+      const response = await fetch(
+        "https://credit-risk-mmyr.onrender.com/predict",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(features),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: ${response.status}`);
